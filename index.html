@@ -56,7 +56,7 @@
   <div class="mobile-buy"><strong>R$ 57</strong><a class="btn btn-primary checkout" href="#comprar">Comprar agora →</a></div>
   <script>
     // Substitua pela URL do checkout antes de publicar.
-    const CHECKOUT_URL = "https://pay.hotmart.com/A107875652E";
+    const CHECKOUT_URL = "https://pay.hotmart.com/A107875652E?checkoutMode=10";
     document.querySelectorAll(".checkout").forEach((link) => {
       if (CHECKOUT_URL) link.href = CHECKOUT_URL;
       else link.addEventListener("click", (event) => {
