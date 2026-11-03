@@ -5,7 +5,8 @@ document.addEventListener("click", (event) => {
   window.gtag("event", link.dataset.track, {
     link_label: link.dataset.trackLabel || link.textContent.trim(),
     link_location: link.dataset.trackLocation || "site",
-    link_destination: link.href
+    link_destination: link.href,
+    cta_type: link.dataset.trackType || undefined
   });
 });
 
